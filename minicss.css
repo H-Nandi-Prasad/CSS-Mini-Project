@@ -1,0 +1,132 @@
+*{
+    font-family: "Faustina", serif;
+    margin : 0;
+    padding : 0;
+}
+.main_box
+{
+background:url(photo.jpg);
+height:100vh;
+background-size: cover;
+}
+.btn_one i
+{
+    color: white;
+    font-size: 25px;
+    font-weight: 60px;
+    top:10px;
+    position:absolute;
+    left:15px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.btn_one i:hover
+{
+    font-size: 30px;
+}
+.btn_two i:hover
+{
+    font-size: 30px;
+
+}
+.btn_two i
+{
+    color:  gray;
+    font-size: 20px;
+    left:275px;
+    top:5px;
+    font-weight: 60px;
+    position:absolute;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.sidebar_menu
+{
+    position:fixed;
+    height:100vh;
+    width:300px;
+    left: -350px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.485);
+    background-color: rgba(255, 255, 255, 0.097);
+    transition: all 0.6s ease-out;
+}
+.sidebar_menu .logo
+{
+    position: absolute;
+    width:100%;
+    height:60px;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+}
+.sidebar_menu .logo a 
+{
+    position:absolute;
+    left:50px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    text-align:center;
+    font-weight: 400 ;
+    top:12px;
+}
+.sidebar_menu .menu
+{
+    top: 62px;
+    position:absolute;
+    width:100%;
+}
+li{
+        padding: 14px 20px;
+}
+.sidebar_menu .menu li:hover
+{
+        box-shadow: 0 0 3px white;
+}
+.sidebar_menu .menu i,a
+{
+    text-decoration: none;
+    color:white;
+}
+.sidebar_menu .menu i{
+    padding-right: 5px;
+}
+.sidebar_menu .social_media
+{
+    position:absolute;
+    left:23%;
+    bottom:25px;
+    padding-bottom:10px;
+}
+.sidebar_menu .social_media a{
+    padding: 0 8px;
+    color:rgba(255, 255, 255, 0.398);
+    transition: all 0.3s ease-in-out;
+}
+.social_media .menu li{
+    box-shadow: 2px 2px 2px white;
+    align-items: center;
+}
+#check
+{
+    display:none;
+}
+.sidebar_menu .social_media i:hover
+{
+color:white;
+/* font-size: 30px; */
+animation-delay: 1s;
+animation-duration: 2s;
+transform:scale(2);
+} 
+#check:checked ~ .sidebar_menu
+{
+    left:0;
+    
+} 
+#check:checked ~ .btn_one
+{
+    opacity: 0;;
+}
+#check:checked ~ .btn_two
+{
+    opacity: 1;
+}
